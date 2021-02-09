@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bd0aad18e6a412a8f3ec11a45015d23765f6956a4a79f5ff700a47fc7439e7f8
-size 521
+Unity Analytics: Tracker
+------------------------------
+Please visit the following URL to see documentation for the Analytics Event Tracker.
+
+https://docs.google.com/document/d/1glh4zEk0KQ_FhOgk95H-VOubcdzrVGyu5BYCmhFQCh0/edit#
+
+Please note, the documentation at this URL is considered a "living" document and subject to change.
+
+
+Unity Analytics: Standard Events
+------------------------------
+Track player behavior specific to your game
+
+Standard Events are a set of curated custom events focused on player experience.

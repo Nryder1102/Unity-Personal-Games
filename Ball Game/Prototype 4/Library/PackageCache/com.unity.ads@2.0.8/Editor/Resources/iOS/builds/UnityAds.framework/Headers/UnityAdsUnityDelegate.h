@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b701a04b106d447228c36b4b926e52f518ec4b7081f8dfbe9c84676a5dfdda4c
-size 310
+#import "UnityAds.h"
+NS_ASSUME_NONNULL_BEGIN
+@protocol UnityAdsUnityDelegate <UnityAdsDelegate>
+/**
+ *  Called when an in-app purchase is initiated from an ad.
+ *
+ *  @param eventString The string provided via the ad.
+ */
+- (void)unityAdsDidInitiatePurchase:(NSString *)eventString;
+@end
+NS_ASSUME_NONNULL_END

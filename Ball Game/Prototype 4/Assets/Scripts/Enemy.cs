@@ -28,11 +28,13 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Sets the game to over if the number of player present is 0
         playernum = GameObject.FindGameObjectsWithTag("Player").Length;
         if (playernum == 0 && isGameActive)
         {
             isGameActive = false;
         }
+        //Player becomes the target if player is present
         if(isGameActive)
         {
             Vector3 target = player.transform.position;
@@ -40,7 +42,7 @@ public class Enemy : MonoBehaviour
 
             
            
-        
+        //Doesn't work, tried to get some enemies to occasionally target enemies, but I can't get it random per spawn, it's all or nothing
         if (randtarget == 0)
         {
             target = player.transform.position;
@@ -48,7 +50,7 @@ public class Enemy : MonoBehaviour
         {
             target = enemy.transform.position;
         }
-
+        //Makes enemy chase after player (and hopefully other enemies in the future)
         Vector3 lookDirection = (target - transform.position).normalized;
         enemyRb.AddForce(lookDirection * speed);
        }

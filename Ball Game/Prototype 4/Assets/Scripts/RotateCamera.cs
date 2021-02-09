@@ -14,6 +14,7 @@ public class RotateCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //File name says it all
         float horizontal = Input.GetAxis("Horizontal");
         transform.Rotate(Vector3.up, horizontal * rotationSpeed * Time.deltaTime);
     }

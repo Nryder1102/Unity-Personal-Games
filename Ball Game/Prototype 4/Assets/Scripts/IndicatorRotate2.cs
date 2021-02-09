@@ -14,6 +14,7 @@ public class IndicatorRotate2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Second ring of animated powerup indicator
         transform.Rotate(Vector3.up, speed * Time.deltaTime);
     }
 }
